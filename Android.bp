@@ -184,24 +184,6 @@ android_app_import {
 }
 
 cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsdm-disp-apis",
 	owner: "asus",
 	strip: {
